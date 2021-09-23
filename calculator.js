@@ -24,7 +24,7 @@ reader.question('What would you like to Calculate?', function(input){
         console.log(num1 - num2);
     }
     
-
+    //no additional information, just placed for a practice commit!!
     reader.close()
 
 });
