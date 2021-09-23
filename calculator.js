@@ -9,8 +9,8 @@ const reader = readline.createInterface({
 reader.question('What would you like to Calculate?', function(input){
     tokens = input.split(' ');
 
-    mathSymbol = tokens[1];
-    num1 = Number(tokens[0]);
+    mathSymbol = tokens[0];
+    num1 = Number(tokens[1]);
     num2 = Number(tokens[2]);
 
     console.log('mathSymbol', mathSymbol);
@@ -23,7 +23,15 @@ reader.question('What would you like to Calculate?', function(input){
     if (mathSymbol === "-"){
         console.log(num1 - num2);
     }
-    
+    if (mathSymbol === "*"){
+        console.log(num1 * num2);
+    }
+    if (mathSymbol === "/"){
+        console.log(num1 / num2);
+    }
+    if (mathSymbol === "sqrt"){
+        console.log(Math.sqrt(num1))
+    }
     //no additional information, just placed for a practice commit!!
     reader.close()
 
